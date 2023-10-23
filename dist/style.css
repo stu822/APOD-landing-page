@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #000;
+  color: #e7eeea;
+}
+
+.container {
+  background-color: rgba(31, 34, 49, 0.4);
+  position: relative;
+}
+.spinner {
+  position: absolute;
+  margin-top: 1.2rem;
+  left: 45vw;
+  top: 50vh;
+  height: 100px;
+  width: 100px;
+  border: 6px solid;
+  border-color: #e7eeea transparent #e7eeea transparent;
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  padding-top: 50px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.date-display p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Clock Display */
+.clock-display {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-display h2 {
+  font-size: 4rem;
+}
+/* APOD Description */
+footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.description-display {
+  width: 80%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

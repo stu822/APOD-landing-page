@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Time and Space</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="spinner"></div>
+      <header>
+        <h1>
+          Good <span id="day-time">morning</span> <span id="user">Dave</span>
+        </h1>
+        <div class="date-display">
+          <p id="date"></p>
+        </div>
+      </header>
+      <section class="clock-display">
+        <h2 id="clock">
+          <span id="hr"></span>:<span id="min"></span><span id="secs"></span
+          ><span id="am-pm"></span>
+        </h2>
+      </section>
+      <footer>
+        <div class="description-display">
+          <h3 id="apod-title"></h3>
+          <p id="description"></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
